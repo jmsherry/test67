@@ -49,7 +49,7 @@ _log_: Shows the history of the repo as you commit things
    1. To change the commit message of the last commit: `git commit --amend -m "<new message>"`
    2. To add files you forgot (and keep the same message), stage them, then: `git commit --amend --no-edit`
    3. Anything more complex than that and you're in rebase territory!
-2. To undo a commit:
+2. To undo the last commit:
    1. Back to staging: `git reset --soft HEAD~1` (can't do filepaths)
    2. Back to working tree: `git reset --mixed HEAD <file>` (`--mixed` is default and not required)
    3. Remove totally: `git reset --hard HEAD~2` (can't do filepaths)
