@@ -50,9 +50,9 @@ _log_: Shows the history of the repo as you commit things
    2. To add files you forgot (and keep the same message), stage them, then: `git commit --amend --no-edit`
    3. Anything more complex than that and you're in rebase territory!
 2. To undo a commit:
-   1. Back to staging: `git reset --soft HEAD <file>`
+   1. Back to staging: `git reset --soft HEAD~1` (can't do filepaths)
    2. Back to working tree: `git reset --mixed HEAD <file>` (`--mixed` is default and not required)
-   3. Remove totally: `git reset --hard HEAD <file>`
+   3. Remove totally: `git reset --hard HEAD~2` (can't do filepaths)
 3. This moves back to the last recorded commit. If you want to go back to a previous commit do `HEAD~<n>` (e.g. `HEAD~2`)
 
 #### Setting local files back to the last commit
