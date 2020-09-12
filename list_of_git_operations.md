@@ -55,6 +55,8 @@ _log_: Shows the history of the repo as you commit things
    3. Remove totally: `git reset --hard HEAD~2` (can't do filepaths)
 3. This moves back to the last recorded commit. If you want to go back to a previous commit do `HEAD~<n>` (e.g. `HEAD~2`)
 
+To go back to the last place you were in the repo (if you cock everything up): `git reset --hard HEAD`
+
 #### Setting local files back to the last commit
 
 1. If you want to discard your work [on certain files]: `git checkout HEAD [files]`
